@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-gray: hsl(0, 0%, 59%);
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-grayish-blue:  hsl(227, 10%, 46%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -30rem left -20rem, bottom -50rem right -20rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.container {
+    width: max(100%, 60%);
+    max-width: 400px;
+    padding: 1rem;
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+/* card */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+/* card bg-image */
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.card h1 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 18px;
+    color: var(--dark-grayish-blue);
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+/* card-avatar image */
+.avatar img {
+    margin-top: -3rem;
+    border: 4px solid #fff;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.card .content {
+    padding: 1rem;
+}
+
+/* panel */
+.panel {
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.p-box {
+    margin: 1.5rem 0  0 0;
+}
+
+.p-box .status{
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.p-box .title {
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+@media screen and (max-width: 300px) {
+    .panel .status {
+        font-size: 14px;
+    }
+    .p-box .title {
+        font-size: 08px;
+    }
+}
+
+/* footer */
+.attribution { 
+    margin-top: 1rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
